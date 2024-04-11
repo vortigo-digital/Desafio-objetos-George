@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-image: url(/assets/dojobkg.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    gap: 5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15%;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 5rem;
+}
+
+.container h1{
+    width: 20%;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: red;
+    color: black;
+    text-transform: uppercase;
+}
+
+button {
+    width: 10rem;
+    height: 5rem;
+    border-radius: 15px; 
+    color: black;
+    font-weight: bolder;
+    font-size: xx-large;
+    background-color: rgb(255, 0, 0); 
+    transition: .5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgb(252, 252, 252) 0px -12px 30px, rgba(247, 246, 246, 0.959) 0px 4px 6px, rgb(255, 255, 255) 0px 12px 13px, rgb(255, 255, 255) 0px -3px 5px;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 50%;
+    height: 4rem;
+    background-color: rgb(255, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgb(252, 252, 252) 0px -12px 30px, rgba(247, 246, 246, 0.959) 0px 4px 6px, rgb(255, 255, 255) 0px 12px 13px, rgb(255, 255, 255) 0px -3px 5px;
+}
+
+.result > p {
+    padding: 1rem;
+    color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* Queries */
+
+/* Para telas médias (tablets e laptops) */
+@media only screen and (max-width: 992px) {
+    body {
+        background-repeat: repeat;
+    }
+    .container {
+        margin-top: 10%; /* Ajuste conforme necessário */
+    }
+    button {
+        width: 8rem; /* Ajuste conforme necessário */
+        height: 4rem; /* Ajuste conforme necessário */
+        font-size: large; /* Ajuste conforme necessário */
+    }
+    .container h1 {
+        width: 30%; /* Ajuste conforme necessário */
+        font-size: large; /* Ajuste conforme necessário */
+    }
+    .result {
+        width: 70%; /* Ajuste conforme necessário */
+    }
+    .result > p {
+        font-size: large; /* Ajuste conforme necessário */
+    }
+}
+
+/* Para telas de dispositivos móveis */
+@media only screen and (max-width: 600px) {
+    body {
+        height: 100%;
+    }
+    .container {
+        margin-top: 20%; /* Ajuste conforme necessário */
+    }
+    button {
+        width: 6rem; /* Ajuste conforme necessário */
+        height: 3rem; /* Ajuste conforme necessário */
+        font-size: medium; /* Ajuste conforme necessário */
+    }
+    .container h1 {
+        width: 40%; /* Ajuste conforme necessário */
+        font-size: medium; /* Ajuste conforme necessário */
+    }
+    .result {
+        width: 80%; /* Ajuste conforme necessário */
+    }
+    .result > p {
+        font-size: medium; /* Ajuste conforme necessário */
+    }
+}
